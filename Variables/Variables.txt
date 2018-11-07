@@ -1,0 +1,4 @@
+*** Variables ***
+${url}    https://www.czc.cz/
+${browser}    firefox
+${logo}     xpath=//a[@id='logo']

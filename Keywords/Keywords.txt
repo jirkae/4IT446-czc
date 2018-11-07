@@ -1,0 +1,9 @@
+*** Keywords ***
+Open
+    [Arguments]    ${url}    ${browser}
+    Open Browser    ${url}    ${browser}   
+    Maximize Browser Window
+    
+Capture Screenshot And Close Browser
+    Capture Page Screenshot
+    Close Browser

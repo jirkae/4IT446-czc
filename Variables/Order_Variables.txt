@@ -1,0 +1,3 @@
+***Variables***
+${url_stock}    https://www.czc.cz/xiaomi-redmi-note-5-32gb-cerna/232149/produkt
+${url_not_stock}    https://www.czc.cz/intel-celeron-g4900/233845/produkt
