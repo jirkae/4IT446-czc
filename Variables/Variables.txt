@@ -1,4 +1,5 @@
 *** Variables ***
-${url}    https://www.czc.cz/
 ${browser}    firefox
-${logo}     xpath=//a[@id='logo']
+${url}    https://www.czc.cz/
+${url_stock}    https://www.czc.cz/apple-iphone-xs-256gb-stribrna/244921/produkt
+${url_not_stock}    https://www.czc.cz/intel-celeron-g4900/233845/produkt

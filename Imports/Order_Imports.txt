@@ -3,6 +3,3 @@ Library    Selenium2Library
 Resource    ../Variables/Variables.txt
 Resource    ../Keywords/Keywords.txt
 Resource    ../Variables/Objects.txt
-Resource    ../Variables/Order_Variables.txt
-Resource    ../Keywords/Order_Keywords.txt 
-Resource    ../Variables/Order_Objects.txt

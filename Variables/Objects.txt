@@ -1,1 +1,9 @@
 ***Variables***
+${logo}     xpath=//a[@id='logo']
+${product_verification}    xpath=//span[@title='Kód výrobce: MT9J2CN/A']
+${btn_buy_one_click}    xpath=//a[@class='btn btn-action btn-reservation']
+${pop_up_window}    xpath=//div[@class='popup-content']
+${btn_buy_text}    xpath=//span[@class='btn-inner ico-check']
+${btn_buy}    xpath=//button[@class='btn btn-buy']
+${bag_money_part}    xpath=//span[@class='title bold']
+${btn_clear_bag}    xpath=//a[@title='Odstranit z košíku']
