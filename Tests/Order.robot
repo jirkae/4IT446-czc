@@ -4,7 +4,7 @@ Test Setup  Open    ${url}    ${browser}
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Test Cases ***
-Req01 - Add To Bag
+T1.1.1 - Add To Bag
     Go To   ${url_stock}
     Wait Until Page Contains Element    ${product_verification}
     Click Button    ${btn_buy} 
@@ -13,13 +13,13 @@ Req01 - Add To Bag
     Wait Until Page Contains Element    ${btn_buy_text}
     Element Should Contain    ${btn_buy_text}    V košíku  
 
-Req02 - One Click Order
+T1.2.1 - One Click Order
     Go To   ${url_stock}
     Wait Until Page Contains Element    ${product_verification}
     Click Element    ${btn_buy_one_click}
     Wait Until Page Contains Element     ${pop_up_window} 
 
-Req14 - Add To Bag
+T2.3.1- Add To Bag
     Go To   ${url_stock}
     Wait Until Page Contains Element    ${product_verification}
     Click Button    ${btn_buy} 
