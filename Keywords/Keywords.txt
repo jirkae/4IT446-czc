@@ -7,3 +7,9 @@ Open
 Capture Screenshot And Close Browser
     Capture Page Screenshot
     Close Browser
+
+Add To Cart
+    [Arguments]  ${product_verification}     ${btn_buy}
+    Wait Until Page Contains Element    ${product_verification}
+    Click Button    ${btn_buy} 
+    Wait Until Page Contains    Zboží jsme vložili do košíku 
