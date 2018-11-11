@@ -21,12 +21,10 @@ T2.2.1 - Share Cart
     Go To   ${url_stock}
     Add To Cart  ${product_verification}     ${btn_buy}
     Go To   ${url_cart}
-    Should Contain      ${product_code} 
     Wait Until Page Contains Element   ${product_code} 
     Page Should Contain Element     ${product_code}     limit=1
     Element Should Contain  ${product_code}  ${product_code_stock} 
     Go To   ${url_share}
-    Should Contain
     Wait Until Page Contains Element    ${product_code_share} 
     Page Should Contain Element     ${product_code_share}     limit=1 
 
