@@ -17,6 +17,12 @@ T1.2.1 - One Click Order
     Click Element    ${btn_buy_one_click}
     Wait Until Page Contains Element     ${pop_up_window} 
 
+T1.6.1 - Stock at Branch
+    Go To   ${url_stock}
+    Wait Until Page Contains Element    ${stock_button}
+    Click Element    ${stock_button}
+    Element Should Be Visible    ${popup}
+
 T2.2.1 - Share Cart
     Go To   ${url_stock}
     Add To Cart  ${product_verification}     ${btn_buy}
