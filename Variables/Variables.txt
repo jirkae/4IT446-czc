@@ -1,8 +1,5 @@
 *** Variables ***
 ${browser}    firefox
-${product_code_stock}   244921
-${url}    https://www.czc.cz/
-${url_cart}     https://www.czc.cz/kosik
-${url_share}    https://www.czc.cz/${product_code_stock}/kody
-${url_stock}    https://www.czc.cz/apple-iphone-xs-256gb-stribrna/${product_code_stock}/produkt
-${url_not_stock}    https://www.czc.cz/intel-celeron-g4900/233845/produkt
+${reference_product_id}   244921
+${base_url}    https://www.czc.cz/
+${url_cart}     ${base_url}kosik

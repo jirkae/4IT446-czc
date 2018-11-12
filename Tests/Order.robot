@@ -4,7 +4,7 @@ Test Setup  Open    ${url}    ${browser}
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Test Cases ***
-T1.1.1 - Add To Bag
+T1.1.1 - Add To Cart
     Go To   ${url_stock}
     Add To Cart  ${product_verification}     ${btn_buy}  
     Go Back   

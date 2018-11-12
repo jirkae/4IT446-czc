@@ -1,2 +1,9 @@
 #
 /.idea
+.project
+.settings
+Thumbs.db
+geckodriver.log
+libspecs
+log.html
+red.xml

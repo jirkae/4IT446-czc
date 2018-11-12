@@ -1,3 +1,6 @@
+*** Settings ***
+Library    Selenium2Library
+
 *** Keywords ***
 Open
     [Arguments]    ${url}    ${browser}
@@ -7,9 +10,21 @@ Open
 Capture Screenshot And Close Browser
     Capture Page Screenshot
     Close Browser
-
-Add To Cart
-    [Arguments]  ${product_verification}     ${btn_buy}
-    Wait Until Page Contains Element    ${product_verification}
+   
+Open Product Page
+    [Arguments]    ${product_id}
+    Go To    ${base_url}_/${product_id}/produkt
+    Wait Until Page Contains Element    ${product_detail_container}    
+    
+Add Product To Cart
+    [Arguments]    ${product_id}
+    Open Product Page    ${product_id}
+    Wait Until Page Contains Element    ${btn_buy}  
     Click Button    ${btn_buy} 
-    Wait Until Page Contains    Zboží jsme vložili do košíku 
+    Wait Until Page Contains Element    ${buy_mode} 
+    
+Open Cart Page With Product
+    [Arguments]    ${product_id}    ${browser}
+    Open    ${base_url}    ${browser}
+    Add Product To Cart    ${product_id}
+    Go To    ${url_cart}
