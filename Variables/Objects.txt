@@ -12,7 +12,6 @@ ${cart_total_price}    xpath=//*[@class='total-price']/*[@class='price-vatin']/*
 
 
 ${product_code}     xpath=//div[@id='basket-table']//span[@class='product-code']
-${product_code_share}   xpath=//div[@id='tiles']//div[@data-clipboard='${product_code_stock}']
 ${btn_buy_one_click}    xpath=//a[@class='btn btn-action btn-reservation']
 ${one_click_pop_up_window}    id=popup-reservation
 
