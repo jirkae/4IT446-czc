@@ -19,3 +19,9 @@ ${bag_money_part}    xpath=//span[@class='title bold']
 ${btn_clear_bag}    xpath=//a[@title='Odstranit z košíku']
 ${stock_button}     xpath=//div[@id='warehouse']/span[1]
 ${popup}    xpath=//div[@class='popup-content']
+
+${discount_cupons}    id=frm-discountCode
+${discount_cupons_send}    id=send-discount-code
+${discount_cupons_error}    xpath=//*[@for="frm-discountCode" and @class="input-error"]
+
+${delivery_informations_form}    name=basket-delivery-information-form
