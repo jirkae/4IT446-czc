@@ -7,8 +7,17 @@ Test Setup  Open Cart Page With Product    ${product_id}    ${browser}
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Test Cases ***
-T2.1.1 - Insurance Options Visibility
+T2.1.1 - Invalid Code
     Page Should Contain Element    ${discount_cupons}
-    Input Text    ${discount_cupons}    ${invalid_code}
+    Enter Code    ${invalid_code}
+    Wait Until Page Contains Element    ${discount_cupons_error}
+    
+T2.1.1 - Valid Code
+    Enter Code    ${valid_code}
+    Wait Until Page Contains    ${valid_code_name}
+    
+*** Keywords ***
+Enter Code
+    [Arguments]    ${code}
+    Input Text    ${discount_cupons}    ${code}
     Click Element    ${discount_cupons_send}
-    Wait Until Page Contains Element    ${discount_cupons_error}    

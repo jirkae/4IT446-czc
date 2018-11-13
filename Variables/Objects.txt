@@ -8,6 +8,7 @@ ${btn_buy_in_basket}    xpath=//button[contains(@class, 'btn-buy') and contains(
 ${btn_buy_text}    xpath=//span[@class='btn-inner ico-check']
 
 ${cart_amount_container}    xpath=//*[contains(@class, 'op-quantity')]
+${cart_total_price}    xpath=//*[@class='total-price']/*[@class='price-vatin']/*[@class='money-part']
 
 
 ${product_code}     xpath=//div[@id='basket-table']//span[@class='product-code']
