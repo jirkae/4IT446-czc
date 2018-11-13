@@ -1,8 +1,8 @@
 ***Variables***
-${logo}     id:logo
-${product_detail_container}    id:product-detail
-${buy_mode}    id:buy-mode
-${mini_cart}    id:basket-info
+${logo}     id=logo
+${product_detail_container}    id=product-detail
+${buy_mode}    id=buy-mode
+${mini_cart}    id=basket-info
 ${btn_buy}    xpath=//button[contains(@class, 'btn-buy')]
 ${btn_buy_in_basket}    xpath=//button[contains(@class, 'btn-buy') and contains(@class, 'in-basket')]
 ${btn_buy_text}    xpath=//span[@class='btn-inner ico-check']
@@ -13,7 +13,7 @@ ${cart_amount_container}    xpath=//*[contains(@class, 'op-quantity')]
 ${product_code}     xpath=//div[@id='basket-table']//span[@class='product-code']
 ${product_code_share}   xpath=//div[@id='tiles']//div[@data-clipboard='${product_code_stock}']
 ${btn_buy_one_click}    xpath=//a[@class='btn btn-action btn-reservation']
-${pop_up_window}    xpath=//div[@class='popup-content']
+${one_click_pop_up_window}    id=popup-reservation
 
 ${bag_money_part}    xpath=//span[@class='title bold']
 ${btn_clear_bag}    xpath=//a[@title='Odstranit z košíku']

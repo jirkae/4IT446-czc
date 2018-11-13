@@ -1,5 +1,6 @@
 *** Variables ***
 ${browser}    firefox
 ${reference_product_id}   244921
+${one_click_product_id}    206782
 ${base_url}    https://www.czc.cz/
 ${url_cart}     ${base_url}kosik

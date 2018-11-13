@@ -1,5 +1,6 @@
 *** Settings ***
 Library    Selenium2Library
+Library    String    
 Resource    ../Variables/Variables.txt
 Resource    ../Keywords/Keywords.txt
 Resource    ../Variables/Objects.txt
