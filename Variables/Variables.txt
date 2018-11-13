@@ -7,3 +7,4 @@ ${url_cart}     ${base_url}kosik
 ${url_cart_addresses}    ${url_cart}/dodaci-udaje
 ${url_delivery_payments}    ${url_cart}/dodani-a-platba
 ${invalid_code}    xx
+${btn_continue_order}  xpath=//button[@class='btn btn-purchase']
