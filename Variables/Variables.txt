@@ -11,3 +11,11 @@ ${invalid_code}    xx
 ${valid_code}    CZCVANOCE1058
 ${valid_code_name}    Sleva 200 Kč
 ${btn_continue_order}  xpath=//button[@class='btn btn-purchase']
+
+${i_mail}    xx@xx.com
+${i_phone}    555555555
+${i_name}    xxz
+${i_sname}    xxy
+${i_street}    Ulice 1234/5b
+${i_city}    xxa
+${i_postal}    100 00

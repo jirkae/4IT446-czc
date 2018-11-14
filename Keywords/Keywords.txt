@@ -38,3 +38,16 @@ Open Cart Page With Payment
     Click Element    ${btn_continue_order}
     Wait Until Page Contains Element    ${btn_continue_order}
     Click Element    ${btn_continue_order}
+    
+Step Back
+    Wait Until Page Contains Element     ${btn_continue_order}
+    Click Element    ${btn_back}
+    
+Step Forward
+    Wait Until Page Contains Element    ${btn_continue_order}
+    Click Element    ${btn_continue_order}
+
+Step Forward Unavailable Item
+    Click Element    ${btn_continue_order}
+    Wait Until Page Contains Element     ${unavailable_item}
+    Click Element    ${btn_agree_unavailable}

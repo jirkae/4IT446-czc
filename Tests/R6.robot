@@ -1,7 +1,5 @@
 *** Variables ***
-${product_id}    ${unavailable_product_id}
-${unavailable_item}    xpath=//*[contains(@id, 'popup-basket-with-unavailable-item')]
-${btn_agree_unavailable}    xpath=//*[contains(@class, 'btn agree')]    
+${product_id}    ${unavailable_product_id}    
 ${no_delivery_date}    xpath=//*[@class='op-sum-del-pay']//*[@class="content"]//strong
 
 *** Settings ***

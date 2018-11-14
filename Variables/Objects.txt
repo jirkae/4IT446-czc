@@ -25,3 +25,14 @@ ${discount_cupons_send}    id=send-discount-code
 ${discount_cupons_error}    xpath=//*[@for="frm-discountCode" and @class="input-error"]
 
 ${delivery_informations_form}    name=basket-delivery-information-form
+
+${unavailable_item}    xpath=//*[contains(@id, 'popup-basket-with-unavailable-item')]
+${btn_agree_unavailable}    xpath=//*[contains(@class, 'btn agree')]    
+${no_delivery_date}    xpath=//*[@class='op-sum-del-pay']//*[@class="content"]//strong
+${btn_back}    xpath=//*[@class='op-back']
+${home_servis_selection}     xpath=//a[@href='/domaci-servis/224897/produkt']/ancestor::label
+${home_servis_selected}    xpath=//*[text()='224897']
+${expres_delivery}    xpath=//label[@for='frm-transport-6']
+${pay_by_card}    xpath=//label[@for='frm-payUPaymentCode-0']
+${expres_delivery_selected}    xpath=//div[@class='op-sum-flex']//span[contains(text(),'EXPRES')]
+${pay_by_card_selected}    xpath=//div[@class='op-sum-flex']//span[contains(text(),'Online')]
