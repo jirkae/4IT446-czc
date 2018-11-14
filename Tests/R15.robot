@@ -7,7 +7,7 @@ Test Setup  Open Cart Page With Product    ${product_id}    ${browser}
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Test Cases ***
-T2.1.1 - Insurance Options Visibility
+T2.4.1 - Billing Address Form
     Go To   ${url_delivery_payments}
     Wait Until Page Contains Element    xpath=//button[contains(@class, 'btn-purchase')]         
     Click Element    xpath=//button[contains(@class, 'btn-purchase')]

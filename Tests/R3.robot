@@ -8,11 +8,11 @@ Test Setup  Open Cart Page With Product    ${product_id}    ${browser}
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Test Cases ***
-T2.1.1 - Insurance Options Visibility
+T1.3.1 - Insurance Options Visibility
     Page Should Contain Element    xpath=//*[contains(@name, 'extended-warranty')]
     Page Should Contain Element    xpath=//*[contains(@name, 'mobile-phones-damage-theft')]    
     
-T2.1.1 - Order Price Increase    
+T1.3.2 - Order Price Increase    
     ${price}=    Get Text    ${cart_total_price}
     ${price_int}=    Replace String Using Regexp    ${price}    \\D    ${EMPTY}
     ${warranty_price}=    Get Text     ${xpath_warranty_label}//*[@class='price-vatin']//*[@class='money-part']
