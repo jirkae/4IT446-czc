@@ -2,6 +2,7 @@
 ${browser}    firefox
 ${reference_product_id}   244921
 ${one_click_product_id}    206782
+${unavailable_product_id}    248531
 ${base_url}    https://www.czc.cz/
 ${url_cart}     ${base_url}kosik
 ${url_cart_addresses}    ${url_cart}/dodaci-udaje
