@@ -19,3 +19,10 @@ ${i_sname}    xxy
 ${i_street}    Ulice 1234/5b
 ${i_city}    xxa
 ${i_postal}    100 00
+
+
+${default_text}     xxx
+${valid_email}    xxx@xxx.xx
+${valid_phoneNumberFormatted}    603 123 456
+${valid_street}    Ulice 1
+${valid_zipCodeFormatted}    14300

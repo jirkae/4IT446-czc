@@ -36,3 +36,12 @@ ${expres_delivery}    xpath=//label[@for='frm-transport-6']
 ${pay_by_card}    xpath=//label[@for='frm-payUPaymentCode-0']
 ${expres_delivery_selected}    xpath=//div[@class='op-sum-flex']//span[contains(text(),'EXPRES')]
 ${pay_by_card_selected}    xpath=//div[@class='op-sum-flex']//span[contains(text(),'Online')]
+
+${input_email}    id=frm-registration.email
+${input_phoneNumberFormatted}    id=frm-registration.phoneNumberFormatted
+${input_name}    id=frm-registration.name
+${input_surname}    id=frm-registration.surname
+${input_street}    id=frm-registration.street
+${input_city}    id=frm-registration.city
+${input_zipCodeFormatted}    id=frm-registration.zipCodeFormatted
+${input_submit}    xpath=//button[contains(@class, 'btn-purchase')]
